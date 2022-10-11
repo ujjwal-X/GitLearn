@@ -1,8 +1,12 @@
+body{
+    background-color: black;
+}
 h1,h2{
  font: xx-large;
 }
 h1{
     color:gold;
+    
 }
 h2{
     color: blue;
