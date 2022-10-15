@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    
+}
+#myVideo{
+    width: 100%;
+    position: fixed
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: bisque;
+    cursor: pointer;
+    align-items: center;
+    position:sticky;
+}
+
+.contact {
+    background-color: wheat;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-left: 13px;
+    border: 10px;
+    color: black;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    text-decoration: solid;
+}
+
+.contact:hover {
+    background-color: blue;
+    
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 18%;
+    padding-bottom: 18%;
+    margin-top: 11 20;
+    color: white;
+    border-color: black;
+}
+
+.button {
+    background-color: wheat;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-left: 13px;
+    border: 10px;
+    color: black;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    text-decoration: solid;
+
+
+}
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+  
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+  }
+  
+  a {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .btn {
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  .btn:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  }
+  
+  .btn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(146, 148, 248, 0.4),
+      transparent
+    );
+    transition: all 650ms;
+  }
+  
+  .btn:hover:before {
+    left: 100%;
+  }
+  a,.size{
+      font-size: medium;
+      text-decoration: none;
+  }
