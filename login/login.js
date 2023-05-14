@@ -27,7 +27,7 @@ login.onclick = (e) => {
                 'success'
             );
             setTimeout(()=>{
-                location.href='./congratulations.html';
+                location.href='./Minor project/index.html';
                 },1000)
         }else
         {
